@@ -1,7 +1,6 @@
 # Industrial_Robot
 
-A mini-project to better explain pub-sub architecture in ROS
-
+This Project explain pub-sub architecture in ROS.
 
 #### Once the `simple_arm` package has been built, you can launch the simulation environment using
 ```sh
