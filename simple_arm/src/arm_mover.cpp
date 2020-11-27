@@ -1,4 +1,4 @@
-#include "ros/ros.h"
+#include "ros/ros.h" 
 #include "simple_arm/GoToPosition.h"
 #include <std_msgs/Float64.h>
 
@@ -87,6 +87,6 @@ int main(int argc, char** argv)
     // Handle ROS communication events
     ros::spin();
 
-    return 0;
+    return 0; // success
 }
 
