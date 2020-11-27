@@ -37,7 +37,7 @@ void joint_states_callback(const sensor_msgs::JointState js)
         moving_state = false;
     else {
         moving_state = true;
-        joints_last_position = joints_current_position;
+        joints_last_position = joints_current_position;      // Update the joint position
     }
 }
 
