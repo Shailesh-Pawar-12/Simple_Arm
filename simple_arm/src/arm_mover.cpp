@@ -57,8 +57,8 @@ bool handle_safe_move_request(simple_arm::GoToPosition::Request& req,
     joint1_angle.data = joints_angles[0];
     joint2_angle.data = joints_angles[1];
 
-    joint1_pub.publish(joint1_angle);
-    joint2_pub.publish(joint2_angle);
+    joint1_pub.publish(joint1_angle);         // Publishing joint1_angle 
+    joint2_pub.publish(joint2_angle);         // Publishing joint2_angle
 
     // Wait 3 seconds for arm to settle
     ros::Duration(3).sleep();
