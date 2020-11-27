@@ -1,9 +1,6 @@
 # Industrial_Robot
 
-# RoboND-simple_arm
 A mini-project to better explain pub-sub architecture in ROS
-
-## How to Launch the simulation?
 
 
 #### Once the `simple_arm` package has been built, you can launch the simulation environment using
@@ -29,7 +26,3 @@ This stream can be viewed by following command in separate terminal:
 ```sh
 $ rosrun image_view image_view image:=/rgb_camera/image_raw
 ```
-
-## Simulation Interface:
-![alt text](images/simulation.png)
-
