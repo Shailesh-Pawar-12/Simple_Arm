@@ -15,7 +15,7 @@ void move_arm_center()
 
     // Request centered joint angles [1.57, 1.57]
     simple_arm::GoToPosition srv;
-    srv.request.joint_1 = 1.57;
+    srv.request.joint_1 = 1.57;                     // Service call for setting 90 degree position for joint 1 and joint 2. 
     srv.request.joint_2 = 1.57;
 
     // Call the safe_move service and pass the requested joint angles
@@ -49,7 +49,7 @@ void look_away_callback(const sensor_msgs::Image img)
 
     // Loop through each pixel in the image and check if its equal to the first one
     for (int i = 0; i < img.height * img.step; i++) {
-        if (img.data[i] - img.data[0] != 0) {
+        if (img.data[i] - img.data[0] != 0) {                        // if current image pixel value not equal to previous image pixel value.  
             uniform_image = false;
             break;
         }
