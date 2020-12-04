@@ -1,4 +1,4 @@
-# Industrial_Robot
+# Simple_Arm
 
 This Project explain pub-sub architecture in ROS.
 
